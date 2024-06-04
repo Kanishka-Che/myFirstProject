@@ -13,18 +13,20 @@ import p1 from '../../assets/photo1.png'
 import p5 from '../../assets/photo5.png'
 import p3 from '../../assets/photo3.png'
 import pn from '../../assets/Untitled.png'
+import { NavLink } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
         <nav>
             <img src={NavImg}/>
             <ul>
-                <li><a href='login.php'>Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <button className="buttonNav" ><a href="login.php" >Log in</a></button> 
+                <li><NavLink to="/">Home</NavLink></li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>About</li>
+                <li><NavLink to="/user-login"><button className="buttonNav" >Login</button></NavLink></li>
             </ul>
-          </nav>
+        </nav>
 
       <section className="about">
       <h3>About</h3>
