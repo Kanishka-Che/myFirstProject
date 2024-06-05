@@ -24,7 +24,7 @@ const Home = () => {
                 <li>Products</li>
                 <li>Services</li>
                 <li>About</li>
-                <li><NavLink to="/user-login"><button className="buttonNav" >Login</button></NavLink></li>
+                <li><NavLink to="/login"><button className="buttonNav" >Login</button></NavLink></li>
             </ul>
         </nav>
 
